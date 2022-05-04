@@ -1,6 +1,6 @@
 
 :root{
-	--smallpad:0.5rem;
+  --smallpad:0.5rem;
   --mediumpad:1rem;
   --miderpad: 1.5rem;
   --largepad:2rem;
@@ -22,8 +22,18 @@ body{
     /* background-position: center; */
     background-size: cover;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+    font-size: var(--largepad);
     background-attachment: fixed;
+}
+input[type=text]{
+    font-size: var(--largepad);
+    height: var(--miderpad);
+    padding: var(--smallpad);
+}
+
+input[type=text]:focus{
+    background-color: var(--maincolor);
+    border: 2px var(--darker_maincolor)
 }
 .title{
     margin-top:var(--miderpad) ;
