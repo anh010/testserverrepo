@@ -1,0 +1,49 @@
+
+:root{
+	--smallpad:0.5rem;
+  --mediumpad:1rem;
+  --miderpad: 1.5rem;
+  --largepad:2rem;
+  --xlpad:3rem;
+    
+  --shortTransi:0.6;
+  --hdersize:1.5rem;
+  --mainfont: Lucida Console;
+
+  --textcolor:white;
+	--backgroundcolor: hsl(240, 0%, 20%);
+	--maincolor:hsl(36, 70%, 70%);
+  --darker_maincolor:hsl(36, 70%, 50%);
+  }
+
+
+body{
+    background-image: url(images/meow.png);
+    /* background-position: center; */
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-attachment: fixed;
+}
+.title{
+    margin-top:var(--miderpad) ;
+    text-align: center;
+}
+.login{
+    text-align: center;
+    padding: var(--miderpad);
+}
+button{
+    font-size: var(--midpad);
+    transition-duration: var(--shortTransi);
+    font-family: var(--mainfont);
+    border-radius: var(--mediumpad);
+    background-color: var(--maincolor);
+    padding: var(--smallpad);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  button:hover{
+    background-color: var(--darker_maincolor);
+    color:white;
+  }
