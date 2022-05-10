@@ -22,7 +22,7 @@ function welcome(){
         document.getElementById('msg').innerHTML = "Welcome Back!";
     }
     else{
-        document.body.style.backgroundImage = "url(public/images/mobile_meow2.png)";
+        document.body.style.backgroundImage = "url(public/images/meow2.png)";
         document.getElementById('msg').innerHTML = "Welcome Back!";
 
     }
