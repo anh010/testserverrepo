@@ -12,6 +12,8 @@
   <body id ="body">
     <div class="title"> Welcome to Pet Pets!</div>
     <p class="title">To register or login please your email and Pep Pet ID</p>
+    <form method ='post' action = 'updateDB.php' >
+    <input type="hidden" name="submitted" value="true"/>
     <div class ="login">
       E-mail: <input type="text" id="email"  name="email"><br>
       Pep Pet ID: <input type="text" id="petid"name="PETID"><br><br>
@@ -19,6 +21,7 @@
       <Button  onclick ="registered()"type="submit">Register </Button> 
       <Button onclick = "welcome()" type="submit"> Login</Button>
     </div>
+    </form>
     <div class="login">
       <p  id="msg"class="title"> </p>
     </div>
