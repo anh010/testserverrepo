@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submitted'])){
+
     include('connect.php');
 
     $email = $_POST['email'];
@@ -12,6 +12,25 @@ if (isset($_POST['submitted'])){
     $newuser = "Registered sucessfully!";
 
     $dbcon->close();
-}
+
 
 ?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Pep Pets </title>
+
+    
+    <link rel="stylesheet" type="text/css" href="public/style.css">
+   
+    <div class='login'>
+       Thank you for registering! 
+    </div>
+
+  </head>
+  <body>
+
+
+
+  </body>
+</html>
