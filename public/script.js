@@ -28,7 +28,7 @@ function welcome(){
     }
 }
 window.addEventListener('load', function () {
-    if (width < 700 ){
+    if (this.screen.width < 700 ){
         var element  = this.document.getElementById("body");
         element.style.fontSize("3rem");
     }
