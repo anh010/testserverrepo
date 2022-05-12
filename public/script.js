@@ -30,7 +30,7 @@ function welcome(){
 window.addEventListener('load', function () {
     if (this.screen.width < 700 ){
         var element  = this.document.getElementById("body");
-        element.style.fontSize("3rem");
+        element.style.fontSize("x-large");
     }
   })
   
