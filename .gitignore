@@ -1,2 +1,3 @@
 credentials.env
-server.py
+*.py
+*.php

@@ -3,7 +3,7 @@
   --smallpad:0.5rem;
   --mediumpad:1rem;
   --miderpad: 1.5rem;
-  --largepad:2rem;
+  --largepad:2.5rem;
   --xlpad:3rem;
     
   --shortTransi:0.6;
@@ -24,6 +24,10 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: var(--largepad);
     background-attachment: fixed;
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
 }
 input[type=text]{
     font-size: var(--largepad);
@@ -32,7 +36,6 @@ input[type=text]{
 }
 
 input[type=text]:focus{
-    background-color: var(--maincolor);
     border: 2px var(--darker_maincolor)
 }
 .title{
@@ -44,6 +47,7 @@ input[type=text]:focus{
     padding: var(--miderpad);
 }
 button{
+    color:white;
     font-size: var(--midpad);
     transition-duration: var(--shortTransi);
     font-family: var(--mainfont);
@@ -55,7 +59,7 @@ button{
   }
 button:hover{
     background-color: var(--darker_maincolor);
-    color:white;
+    
 }
 @media only screen and (max-device-width:700px) {
   body{
