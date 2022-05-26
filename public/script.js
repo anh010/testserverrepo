@@ -13,6 +13,19 @@ function registered(){
     }
     
 }
+function sent(){
+    let width = screen.width;
+    if (width < 700 ){
+
+    document.body.style.backgroundImage = "url(public/images/mobile_meow2.png)";
+    document.getElementById('msg').innerHTML = "Sent!";
+    }
+    else{
+    document.body.style.backgroundImage = "url(public/images/meow2.png)";
+    document.getElementById('msg').innerHTML = "Sent!"
+    }
+}
+
 function welcome(){
     let width = screen.width;
     if (width < 700 ){
