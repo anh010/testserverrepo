@@ -17,8 +17,8 @@ $email =  $_POST['email'];
 $petid= $_POST['petid'];
 //echo $email;
 //echo $petid;
-$sql = "INSERT INTO parentEmails (email,petid) VALUES 
-    ('" . $email . "','". $petid . "');";
+$sql = "INSERT INTO ID_emails (petid,owner) VALUES 
+    ('" . $petid . "','".$email . "');";
 
 if ($dbcon->query($sql) == TRUE){
     echo "New parent registered sucessfully";
