@@ -11,7 +11,19 @@ function registered(){
         document.getElementById('msg').innerHTML = "Thank you for registering!";
 
     }
-    
+
+    var email =  document.getElementById('email').value;
+    var petid =  document.getElementById('petid').value;
+    const xhttp =  new XMLHttpRequest();
+    xhttp.onload = function(){
+        // document.getElementById("msg").innerHTML = this.response;
+    };
+    var string = "email="+email+"&petid="+petid;
+
+    xhttp.open("POST","register.php");
+    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhttp.send(string);
+
 }
 function sent(){
     let width = screen.width;
