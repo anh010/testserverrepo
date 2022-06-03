@@ -25,6 +25,7 @@ function registered(){
     xhttp.send(string);
 
 }
+
 function sent(){
     let width = screen.width;
     if (width < 700 ){
@@ -36,6 +37,9 @@ function sent(){
     document.body.style.backgroundImage = "url(public/images/meow2.png)";
     document.getElementById('msg').innerHTML = "Sent!"
     }
+
+    // TODO will write code that communicates with server to push task to database
+
 }
 
 function welcome(){
