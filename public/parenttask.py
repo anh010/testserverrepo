@@ -1,5 +1,6 @@
 import mysql.connector as mysql
 
+# old server connection DOES NOT work connection has been taken down.
 HOST= "db-mysql-sfo2-96686-do-user-11317347-0.b.db.ondigitalocean.com"
 DATABASE="peppetEMAIL"
 PORT=25060
